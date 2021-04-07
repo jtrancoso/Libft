@@ -3,3 +3,4 @@ segf.c
 libft.h.gch
 Author
 *.o
+*.a

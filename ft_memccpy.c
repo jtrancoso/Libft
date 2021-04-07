@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtrancos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jtrancos <jtrancos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 13:47:00 by jtrancos          #+#    #+#             */
-/*   Updated: 2020/01/15 14:26:56 by jtrancos         ###   ########.fr       */
+/*   Updated: 2021/04/07 13:50:05 by jtrancos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		dst2[i] = src2[i];
 		if (dst2[i] == q)
-			return ((void*)(dst + i + 1));
+			return ((void *)(dst + i + 1));
 		i++;
 	}
 	return (NULL);

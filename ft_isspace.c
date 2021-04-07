@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtrancos <jtrancos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/07 15:45:38 by jtrancos          #+#    #+#             */
-/*   Updated: 2021/03/04 12:35:55 by jtrancos         ###   ########.fr       */
+/*   Created: 2021/04/07 13:48:30 by jtrancos          #+#    #+#             */
+/*   Updated: 2021/04/07 13:49:11 by jtrancos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_isspace(int c)
 {
-	char	*str;
+	int	i;
 
-	str = (char *)s;
-	while (*str != c)
-	{
-		if (*str == '\0')
-			return (NULL);
-		str++;
-	}
-	return (str);
+	i = 0;
+	if (c == ' ' || c == '\n' || c == '\r'
+		|| c == '\t' || c == '\v' || c == '\f')
+		return (1);
+	return (0);
 }
