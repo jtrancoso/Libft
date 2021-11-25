@@ -6,7 +6,7 @@
 #    By: jtrancos <jtrancos@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/13 13:41:25 by jtrancos          #+#    #+#              #
-#    Updated: 2021/04/07 13:50:38 by jtrancos         ###   ########.fr        #
+#    Updated: 2021/11/25 12:14:40 by jtrancos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,10 +52,11 @@ SRCS		=	ft_isalnum.c\
 				ft_lstsize.c\
 				ft_lstlast.c\
 				ft_lstadd_back.c\
+				ft_lstadd_middle.c\
 				ft_lstdelone.c\
 				ft_lstclear.c\
 				ft_lstiter.c\
-				ft_lstmap.c\
+				ft_lstmap.c
 
 OBJS		= $(SRCS:.c=.o)
 CC			= cc
